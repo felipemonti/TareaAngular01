@@ -1,0 +1,10 @@
+<div class="card animated fadeIn fast">
+    <img [src]="pizza.img" class="card-img-top" [alt]="pizza.nombre">
+        <div class="card-body">
+            <h5 class="card-title">{{ pizza.nombre }}</h5>
+        
+            <button (click)="verPizza()" class="btn btn-outline-primary btn-block">
+                Ver más...
+            </button>
+        </div>
+</div>
