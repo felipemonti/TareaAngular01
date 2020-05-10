@@ -1,5 +1,24 @@
 <h1 class="text-center">Pizzas Premium</h1>
 <hr>
+<div class="row">
+    <div class="col-md-6">
+        <h2>Buscar por tamaño de pizza</h2>
+    </div>
+    <div class="col-md-3">
+        <select class="custom-select" id="tamagnoSelect" [(ngModel)]="tamagnoSeleccionado" >
+            <option selected value="ALL">Todas</option>
+            <option value="XL">XL</option>
+            <option value="Familiar">Familiar</option>
+            <option value="Mediana">Mediana</option>
+            <option value="Pequeña">Pequeña</option>
+        </select>        
+    </div>
+    <div class="col-md-3" align="center">
+        <button (click)="buscarPizza()" class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>       
+    </div>
+</div>
+<br>
+<hr>
 <div class="card-columns">
 
     <app-pizza-tarjeta [pizza]="foo" [index]="i" *ngFor="let foo of pizzas; let i=index" ></app-pizza-tarjeta>

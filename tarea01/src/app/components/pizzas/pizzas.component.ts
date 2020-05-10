@@ -10,6 +10,7 @@ import { Pizza, PizzasService } from 'src/app/services/pizzas.service';
 export class PizzasComponent implements OnInit {
 
   pizzas: Pizza[] = [];
+  tamagnoSeleccionado: string = "ALL";
 
   constructor(private router: Router, private _pizzasService: PizzasService) { }
 
@@ -18,6 +19,10 @@ export class PizzasComponent implements OnInit {
     console.log("pizzas: "+this.pizzas);
   }
 
+  buscarPizza(){
+    console.log(this.tamagnoSeleccionado);
+    this.pizzas = this._pizzasService.buscarPizza(this.tamagnoSeleccionado);
+  }
 
 
 }

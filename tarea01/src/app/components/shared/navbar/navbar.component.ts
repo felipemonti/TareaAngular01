@@ -13,8 +13,4 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  buscarPizza(termino:string){
-    console.log(termino);
-    //this.router.navigate(['/buscar', termino]);
-  }
 }

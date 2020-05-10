@@ -20,9 +20,5 @@
                 <a class="nav-link" [routerLink]="['pizzas']">Pizzas</a>
             </li>
         </ul>
-        <div class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Buscar Pizza" (keyup.enter)="buscarPizza(buscarTexto.value)" #buscarTexto>
-            <button (click)="buscarPizza(buscarTexto.value)" class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-        </div>
     </div>
 </nav>
